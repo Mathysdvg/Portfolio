@@ -743,3 +743,81 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+.referentiel-section-light {
+  padding: 60px 0;
+  background-color: #fcfcfc;
+}
+
+.table-container-light {
+  overflow-x: auto;
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.sio-table-detailed {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Rotation des textes d'entête */
+.vertical-th {
+  height: 250px;
+  /* Espace pour le texte vertical */
+  white-space: nowrap;
+  vertical-align: bottom;
+  padding: 10px 5px !important;
+  font-size: 0.75rem;
+  color: #444;
+  border: 1px solid #dee2e6;
+}
+
+.vertical-th {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: left;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 5;
+  border-right: 2px solid #ff6b2b;
+  min-width: 250px;
+  padding: 15px;
+  text-align: left;
+}
+
+.header-level-1 th:not(.sticky-col) {
+  background: #f8f9fa;
+}
+
+.category-row td {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+.sio-table-detailed td {
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 8px;
+}
+
+.sio-table-detailed tr:hover {
+  background: #fff5f0;
+}
+
+.sio-table-detailed tr:hover .sticky-col {
+  background: #fff5f0;
+}
+
+/* Style des coches */
+.sio-table-detailed td:not(.sticky-col) {
+  color: #ff6b2b;
+  font-weight: bold;
+}
